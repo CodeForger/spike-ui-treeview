@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import TreeView from './TreeView';
 import registerServiceWorker from './registerServiceWorker';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+injectTapEventPlugin();
+
+ReactDOM.render(<TreeView />, document.getElementById('root'));
 registerServiceWorker();
